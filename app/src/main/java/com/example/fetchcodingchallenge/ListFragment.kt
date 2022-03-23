@@ -7,7 +7,6 @@ import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
-import androidx.lifecycle.Observer
 import com.example.fetchcodingchallenge.databinding.FragmentListBinding
 import com.google.android.material.snackbar.BaseTransientBottomBar.LENGTH_INDEFINITE
 import com.google.android.material.snackbar.Snackbar
@@ -35,8 +34,9 @@ class ListFragment : Fragment() {
         return binding.root
     }
 
+    // Observes when our snackbar message should show
     private fun observeStatus() {
-        viewModel.statusMessage.observe(viewLifecycleOwner, Observer { event ->
+        viewModel.statusMessage.observe(viewLifecycleOwner, { event ->
             event?.getContentIfNotHandled()?.let {
                 Snackbar.make(requireView(), it, LENGTH_INDEFINITE)
                     .setAction(R.string.retry_action){

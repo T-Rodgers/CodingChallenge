@@ -6,6 +6,7 @@ import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 import com.example.fetchcodingchallenge.ListItemAdapter.ListItemViewHolder
+import com.example.fetchcodingchallenge.data.ListItem
 import com.example.fetchcodingchallenge.databinding.ListItemBinding
 
 class ListItemAdapter : ListAdapter<ListItem, ListItemViewHolder>(ListItemDiffUtilCallBack()) {

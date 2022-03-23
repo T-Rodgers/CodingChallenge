@@ -7,6 +7,7 @@ import android.widget.ProgressBar
 import android.widget.TextView
 import androidx.databinding.BindingAdapter
 import androidx.recyclerview.widget.RecyclerView
+import com.example.fetchcodingchallenge.data.ListItem
 
 @BindingAdapter("listItems")
 fun bindRecyclerView(recyclerView: RecyclerView, listItems: List<ListItem>?) {

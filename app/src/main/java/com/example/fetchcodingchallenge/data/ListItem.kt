@@ -1,3 +1,3 @@
-package com.example.fetchcodingchallenge
+package com.example.fetchcodingchallenge.data
 
 data class ListItem(val id: Int, val listId: Int, val name: String?)

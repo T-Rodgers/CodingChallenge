@@ -4,6 +4,8 @@ import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
+import com.example.fetchcodingchallenge.data.ListItem
+import com.example.fetchcodingchallenge.data.ListItemRepository
 import com.example.fetchcodingchallenge.utils.Event
 import kotlinx.coroutines.launch
 
@@ -32,6 +34,9 @@ class ListItemViewModel : ViewModel() {
         retrieveListItems()
     }
 
+    /**
+     * Retrieves items from repository and sets as LiveData
+     */
     fun retrieveListItems() {
         viewModelScope.launch {
             _status.value = FetchApiStatus.LOADING

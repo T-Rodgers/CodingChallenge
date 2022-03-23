@@ -1,5 +1,7 @@
 package com.example.fetchcodingchallenge
 
+import com.example.fetchcodingchallenge.data.ListItem
+import com.example.fetchcodingchallenge.data.ListItemRepository
 import kotlinx.coroutines.ExperimentalCoroutinesApi
 import kotlinx.coroutines.runBlocking
 import org.hamcrest.CoreMatchers.`is`

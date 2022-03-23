@@ -6,7 +6,7 @@
     <data>
         <variable
             name="listItem"
-            type="com.example.fetchcodingchallenge.ListItem" />
+            type="com.example.fetchcodingchallenge.data.ListItem" />
 
     </data>
 
