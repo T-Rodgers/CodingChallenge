@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Fetch Coding Challenge</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="id_text_format">ID: %s</string>
+    <string name="list_id_text_format">List Id: %s</string>
+    <string name="error_message">Error retrieving items. Check internet connection or try again later.</string>
+    <string name="retry_action">retry</string>
+</resources>
